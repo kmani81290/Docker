@@ -1,0 +1,25 @@
+docker run -d -p --name web nginx
+docker port web
+docker-machine ip default
+
+docker run -P -d nginxdemos/hello
+mkdir mysite
+echo "a new website: > index.html
+ls
+cat index.html
+docker run -d pP -v $HOME/mysite:/usr/share/nginx/html \
+> --name mysite nginx
+
+103  cd $HOME
+  104  ls
+  105  mkdir mysite
+  106  ls
+  107  cd mysite
+  108  ls
+  109  echo "a new website" > index.html
+  110  cat index.html
+  111  docker run -d -P -v $HOME/mysite:/usr/share/nginx/html --name mysite nginx
+  112  docker port mysite
+  113  docker-machine ip deafut
+  114  docker-machine ip default
+  115  histor
