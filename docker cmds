@@ -23,3 +23,54 @@ docker run -d pP -v $HOME/mysite:/usr/share/nginx/html \
   113  docker-machine ip deafut
   114  docker-machine ip default
   115  histor
+  
+  
+  
+  ###########################################################
+  
+  Docker Commands:
+
+##Run Container##
+Docker run -it Centos /bin/bash
+	─it is used to mention that we want to run in interactive mode.
+	/bin/bash is used to run the bash shell once CentOS is up and running.
+	
+Displaying Docker downloaded Images
+#Docker Images.
+	TAG − This is used to logically tag images.
+	Image ID − This is used to uniquely identify the image.
+	Created − The number of days since the image was created.
+	Virtual Size − The size of the image.
+	
+#Docker images -q
+	Displays only Container-ID
+	
+Remove Docker Images
+#docker rmi imageid
+
+Display Docker Process
+
+Docker ps 
+Docker ps -a 
+
+
+
+Testting1:
+create 1 centos instance
+#docker run -it centos
+this instance upload into docker hub------pending
+	steps;
+
+tag your image
+
+#docker images
+#docker tag bbb389766d03cf yourhubusername/verse_gapminder:firsttry
+#docker push yourhubusername/verse_gapminder
+#docker save verse_gapminder > verse_gapminder.ar
+#docer load -input verse_gapminder.tar
+
+
+
+
+
+  
