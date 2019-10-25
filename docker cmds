@@ -81,9 +81,10 @@ https://kodekloud.com/courses/docker-for-the-absolute-beginner-hands-on/lectures
 #Docker stop silly_sammet	;to stop container give name or container ID
 #docker rm silly_sammet		;remove container permanantly
 #docker rmi nginx		;to remove image permanantly/no container to runing with the image
-#docker exec silly_sammet cat /etc/hosts		;find the details about the container while running.
+#docker exec silly_sammet cat /etc/hosts		;run a cmd about in the container while running.
 #docker run -it centos bash				;run and enter i=in to the container
 #docker run -d centos sleep 20				;run in background d=detached and shutdown in 20 secs
+
 
 
 
