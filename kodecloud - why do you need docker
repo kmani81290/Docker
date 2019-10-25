@@ -1,0 +1,11 @@
+Facing Issues:
+Compatibility/Dependency
+long setup time 
+diff dev/test/prod enviroments
+
+developing=> Building => Shipping => Very difficult usual way in the compatible issue, linrary  issue, infrastructure issue.
+
+In Docker
+#Containerize Applicatons
+#Run each service with its own dependencies in separate containers
+#each container having own lib and own dependencies.
