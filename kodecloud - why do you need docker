@@ -9,3 +9,7 @@ In Docker
 #Containerize Applicatons
 #Run each service with its own dependencies in separate containers
 #each container having own lib and own dependencies.
+
+what are containers ? 
+isolated environment
+each container having process, network , mounts
