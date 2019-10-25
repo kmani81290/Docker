@@ -68,6 +68,23 @@ tag your image
 #docker push yourhubusername/verse_gapminder
 #docker save verse_gapminder > verse_gapminder.ar
 #docer load -input verse_gapminder.tar
+#########################################################################################################################################################
+#############################################################################################################################################################################################################################
+##########################################################################################################################################################################
+26 October 2019 1:46
+https://kodekloud.com/courses/docker-for-the-absolute-beginner-hands-on/lectures/4554684
+
+#Docker run nginx          	;to download with run the images in container
+#Docker pull nginx         	;to download only
+#Docker ps			;List containers
+#Docker ps -a 			;Running or stopped containers are also visible
+#Docker stop silly_sammet	;to stop container give name or container ID
+#docker rm silly_sammet		;remove container permanantly
+#docker rmi nginx		;to remove image permanantly/no container to runing with the image
+#docker exec silly_sammet cat /etc/hosts		;find the details about the container while running.
+#docker run -it centos bash				;run and enter i=in to the container
+#docker run -d centos sleep 20				;run in background d=detached and shutdown in 20 secs
+
 
 
 
