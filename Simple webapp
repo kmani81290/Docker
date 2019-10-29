@@ -1,0 +1,36 @@
+Create own docker images
+
+simple web app
+>>https://github.com/mmumshad/simple-webapp-flask
+follow steps
+using python creating simple webapp
+
+
+in ubuntu machine(i tested in ubuntu with docker its working fine)
+First run 
+
+#docker run -it ubuntu bash		;directly directed to docker ubuntu host
+step1: installing python dependies
+#apt-get install -y python python-pip
+#pip install flask
+#cat > /opt/app.py			;paste below content
+
+import os
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def main():
+    return "Welcome!"
+
+@app.route('/how are you')
+def hello():
+    return 'I am good, how about you?'
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
+
+Go to #cd /opt
+#FLASK_APP=app.py flask run --host=0.0.0.0		;go to browser in ubuntu 172.17.0.2:5000 & 172.17.0.2:5000/how are you
+
+
