@@ -91,4 +91,30 @@ https://kodekloud.com/courses/docker-for-the-absolute-beginner-hands-on/lectures
 
 
 
+###############################################################################################################################
+###############################################################################################################################
+
+Docker RUN:
+
+Run in a non interactive mode if you like to provide input run into the interactive mode  givves has a run after a  "-i"  its interactive mode
+Docker run kodekloud/simple-prompt-docker
+
+using "-t" stands for psuedo terminal, so with the combination.
+
+PORT mapping : 
+
+docker run -it -p 80:8080 kodekloud/simple-webapp
+
+80--> denotes container ip (use outside)
+8080 --> denotes internal ports on container
+
+=>all traffic on [port 80 on my docker host will get routed to port 8080 inside the docker
+
+
+
+
+
+
+
+
   
