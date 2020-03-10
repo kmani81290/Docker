@@ -110,6 +110,38 @@ docker run -it -p 80:8080 kodekloud/simple-webapp
 
 =>all traffic on [port 80 on my docker host will get routed to port 8080 inside the docker
 
+###############################################################################################################################
+###############################################################################################################################
+
+To create my own image.
+
+OS - Ubuntu
+Update apt repo
+install dependencies using apt
+install python dependsies using pip
+copy source code to /opt folder
+run the web server using "flask" command
+
+Dockerfile
+///////////
+
+FROM Ubuntu
+
+RUN apt-get update
+RUN apt-get install python
+
+RUN pip install flask
+RUN pip install flask-mysql
+
+COPY . /opt/source-code
+
+ENTRYPOINT FLASK_APP=/opt/source-code/app.py flask run
+
+
+//RUN//
+docker build Dockerfile -t mmumshad/my-custom-app
+
+
 
 
 
