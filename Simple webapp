@@ -10,6 +10,7 @@ in ubuntu machine(i tested in ubuntu with docker its working fine)
 First run 
 
 #docker run -it ubuntu bash		;directly directed to docker ubuntu host
+#apt-get update
 step1: installing python dependies
 #apt-get install -y python python-pip
 #pip install flask
