@@ -142,6 +142,16 @@ ENTRYPOINT FLASK_APP=/opt/source-code/app.py flask run
 docker build Dockerfile -t mmumshad/my-custom-app
 
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Remove all images
+
+docker container stop $(docker container ls -aq)  ----stop all 
+docker container rm $(docker container ls -aq)     -----remove all
+docker rmi $(docker images -q)                        ----remove images
+
+
 
 
 
